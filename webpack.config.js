@@ -5,7 +5,6 @@ const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
   context: __dirname,
-  mode: slsw.lib.webpack.isLocal ? 'development' : 'production',
   entry: slsw.lib.entries,
   devtool: slsw.lib.webpack.isLocal
     ? false
@@ -15,10 +14,6 @@ module.exports = {
     symlinks: false,
     cacheWithContext: false,
     alias: {
-      '@dal': path.resolve(__dirname, 'src/data-access-layer'),
-      '@util': path.resolve(__dirname, 'src/util'),
-      '@entities': path.resolve(__dirname, 'src/entities'),
-      '@tests': path.resolve(__dirname, 'tests'),
       '@controllers': path.resolve(__dirname, 'src/controllers'),
     },
   },
