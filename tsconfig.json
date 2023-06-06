@@ -23,9 +23,7 @@
         "@controllers/*": ["src/controllers/*"]
       },
       "types": [
-        "jest",
         "node",
-        "reflect-metadata"
       ]
     },
     "include": ["./**/*.ts"],
