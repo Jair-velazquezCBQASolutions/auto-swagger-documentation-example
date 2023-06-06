@@ -8,9 +8,15 @@ provider:
   stage: dev
   region: us-west-2
 
+
+custom: 
+  autoswagger: 
+    typefiles: ['./src/models/documentation-model.d.ts']
+
 functions: ${file(serverless-files/serverless-functions-definitions.yml)}
 
 plugins: 
+  - serverless-auto-swagger
   - serverless-offline
   - serverless-webpack
 

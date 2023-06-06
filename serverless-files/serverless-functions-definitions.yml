@@ -6,6 +6,7 @@ postDocumentationExample:
         method: post
         path: documentation/
         cors: true
+        bodyType: 'Document'
 
 getDocumentationExample:
   handler: src/controllers/documentation-controller.handlerGetDocumentationExample
