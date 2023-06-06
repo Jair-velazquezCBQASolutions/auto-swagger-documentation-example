@@ -1,4 +1,10 @@
 {
+  "name": "auto-swagger-documentation-example",
+  "version": "0.0.1",
+  "description": "Example to auto generate swagger ui on serverless",
+  "scripts" : {
+    "start": "serverless offline start"
+  },
   "devDependencies": {
     "serverless-auto-swagger": "^2.12.0",
     "serverless-offline": "^12.0.4",
