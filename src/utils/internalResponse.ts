@@ -1,4 +1,3 @@
-
 export class InternalResponse {
   public esError: boolean;
 
