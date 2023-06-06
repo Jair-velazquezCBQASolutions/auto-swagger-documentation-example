@@ -1,0 +1,16 @@
+#Documentation examples
+postDocumentationExample:
+  handler: src/controllers/documentation-controller.handlerPostDocumentationExample
+  events:
+    - http:
+        method: post
+        path: documentation/
+        cors: true
+
+getDocumentationExample:
+  handler: src/controllers/documentation-controller.handlerGetDocumentationExample
+  events:
+    - http:
+        method: get
+        path: documentation/
+        cors: true

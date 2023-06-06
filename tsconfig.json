@@ -1,0 +1,41 @@
+{
+    "compilerOptions": {
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "lib": ["es2020"],
+      "removeComments": true,
+      "moduleResolution": "node",
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "sourceMap": true,
+      "target": "es2020",
+      "outDir": "lib",
+      "inlineSources": true,
+      "allowJs": true,
+      "esModuleInterop": true,
+      "sourceRoot": "/",
+      "baseUrl": "./",
+      "paths": {
+        "@dal/*": ["src/data-access-layer/*"],
+        "@entities/*": ["src/entities/*"],
+        "@util/*": ["src/util/*"],
+        "@tests/*": ["tests/*"],
+        "@controllers/*": ["src/controllers/*"]
+      },
+      "types": [
+        "jest",
+        "node",
+        "reflect-metadata"
+      ]
+    },
+    "include": ["./**/*.ts"],
+    "exclude": [
+      "node_modules/**/*",
+      ".serverless/**/*",
+      ".webpack/**/*",
+      "_warmup/**/*",
+      ".vscode/**/*",
+      "test/**/*"
+    ]
+  }
+  
