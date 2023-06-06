@@ -15,7 +15,7 @@ export const handlerPostDocumentationExample = async (
   ): Promise<void> => {
     _context.callbackWaitsForEmptyEventLoop = false;
     const salida: InternalResponse = new InternalResponse();
-    salida.payload = 'Hola';
+    salida.payload = 'Hola desde post';
     _callback(null, new RespuestaLambda(salida));
 };
   
@@ -26,7 +26,7 @@ export const handlerGetDocumentationExample = async (
   ): Promise<void> => {
     _context.callbackWaitsForEmptyEventLoop = false;
     const salida: InternalResponse = new InternalResponse();
-    salida.payload = 'Hola';
+    salida.payload = 'Hola desde get';
     _callback(null, new RespuestaLambda(salida));
 };
   
