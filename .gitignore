@@ -4,3 +4,6 @@ jspm_packages
 .webpack
 # Serverless directories
 .serverless
+
+#swagger auto generated files 
+swagger/
