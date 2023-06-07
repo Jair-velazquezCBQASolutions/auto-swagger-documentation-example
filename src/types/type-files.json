@@ -1,0 +1,5 @@
+{
+    "typeFiles": [
+      "./src/models/documentation-model.d.ts"
+    ]
+}

@@ -11,7 +11,7 @@ provider:
 
 custom: 
   autoswagger: 
-    typefiles: ['./src/models/documentation-model.d.ts']
+    typefiles: ${file(src/types/type-files.json):typeFiles}
 
 functions: ${file(serverless-files/serverless-functions-definitions.yml)}
 
