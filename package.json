@@ -1,9 +1,10 @@
 {
   "name": "auto-swagger-documentation-example",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Example to auto generate swagger ui on serverless",
   "scripts" : {
-    "start": "serverless offline start"
+    "start": "serverless offline start",
+    "build-types": "node writeFileTypes.js"
   },
   "devDependencies": {
     "serverless-auto-swagger": "^2.12.0",
