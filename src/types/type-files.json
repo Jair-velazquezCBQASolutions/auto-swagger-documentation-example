@@ -1,5 +1,3 @@
 {
-    "typeFiles": [
-      "./src/models/documentation-model.d.ts"
-    ]
+  "typeFiles": ["./src/models/documentation-model.d.ts"]
 }
